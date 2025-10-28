@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables and Lists</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- First Table Section -->
+    <h2>Table with Colspan Example</h2>
+    <table>
+      <tr>
+        <th>Customer Name</th>
+        <th>ID</th>
+        <th>Phone No.</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td colspan="2">+91 99999 99999</td>
+      </tr>
+    </table>
+
+    <!-- Second Table Section -->
+    <h2>Table with Rowspan Example</h2>
+    <table>
+      <tr>
+        <th>Customer Name</th>
+        <th>ID</th>
+        <th>Phone No.</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>001</td>
+        <td rowspan="2">+91 99999 99999</td>
+      </tr>
+      <tr>
+        <td>Alex</td>
+        <td>002</td>
+        <!-- Notice: no <td> for phone here -->
+      </tr>
+    </table>
+    <!-- List Section -->
+    <h2>Ordered and Unordered Lists Example</h2>
+    <h3>Ordered List</h3>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+    <h3>Dice (Default) Unordered List</h3>
+    <ul type="dice">
+      <li>John</li>
+      <li>Alex</li>
+      <li>Dr Feynman</li>
+    </ul>
+    <h3>Circle Unordered List</h3>
+    <ul type="circle">
+      <li>John</li>
+      <li>Alex</li>
+      <li>Dr Feynman</li>
+    </ul>
+    </ul>
+    <h3>Square Unordered List</h3>
+    <ul type="square">
+      <li>John</li>
+      <li>Alex</li>
+      <li>Dr Feynman</li>
+    </ul>
+  </body>
+</html>
