@@ -1,7 +1,11 @@
-# About this repository
-I'm a student and learning web development from YouTube,
-i'm currently in 12th Standard but next year i'm gonna persue BCA, so'im Learning Foundation of Web Development,
-this source code contains basic:
-- HTML
-- JavaScript
-- CSS
+# About This Repository
+
+I'm a student currently learning web development through online resources such as YouTube. I'm in 12th grade and plan to pursue a Bachelor of Computer Applications (BCA) next year.  
+
+This repository contains my practice code as I work on building a strong foundation in web development. It includes basic examples and experiments with:  
+
+- HTML  
+- CSS  
+- JavaScript  
+
+The purpose of this project is to document my learning progress and improve my understanding of how these core technologies work together to build websites.  
