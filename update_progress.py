@@ -1,27 +1,42 @@
+# update_progress.py
 import os
 import re
+from datetime import datetime
 
-# === CONFIGURATION ===
 TOTAL_LESSONS = 137
 README_PATH = "README.md"
+DEBUG_PATH = "update_progress_debug.txt"
 
-# === STEP 1: Count folders named lesson-XX ===
-lesson_folders = [d for d in os.listdir('.') if re.match(r'lesson-\d+', d)]
-completed = len(lesson_folders)
-percent = round((completed / TOTAL_LESSONS) * 100, 1)
+def list_lesson_folders():
+    items = sorted([d for d in os.listdir('.') if re.match(r'lesson-\d+$', d)])
+    return items
 
-# === STEP 2: Decide current rank ===
-if percent < 10:
-    rank = "🎓 Beginner"
-elif percent < 40:
-    rank = "🚀 Intermediate"
-elif percent < 80:
-    rank = "🔥 Advanced"
-else:
-    rank = "🏆 Master"
+def read_readme():
+    if not os.path.exists(README_PATH):
+        return ""
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        return f.read()
 
-# === STEP 3: Build the progress section ===
-progress_section = f"""
+def write_debug(msg):
+    with open(DEBUG_PATH, "a", encoding="utf-8") as f:
+        f.write(f"{datetime.utcnow().isoformat()} UTC - {msg}\n")
+
+def main():
+    write_debug("Script started")
+    lessons = list_lesson_folders()
+    completed = len(lessons)
+    percent = round((completed / TOTAL_LESSONS) * 100, 1) if TOTAL_LESSONS > 0 else 0.0
+
+    if percent < 10:
+        rank = "🎓 Beginner"
+    elif percent < 40:
+        rank = "🚀 Intermediate"
+    elif percent < 80:
+        rank = "🔥 Advanced"
+    else:
+        rank = "🏆 Master"
+
+    progress_section = f"""
 ## 📚 Learning Progress
 
 ![Progress](https://img.shields.io/badge/Progress-{percent}%25-brightgreen)
@@ -41,21 +56,18 @@ progress_section = f"""
 - 🔜 Next: Start Lesson {completed + 1 if completed < TOTAL_LESSONS else TOTAL_LESSONS}
 """
 
-# === STEP 4: Load README content ===
-with open(README_PATH, "r", encoding="utf-8") as f:
-    content = f.read()
+    content = read_readme()
+    write_debug(f"Found lesson folders: {lessons}")
+    write_debug(f"README exists: {bool(content)}")
+    # flexible pattern
+    pattern = r"##\s*📚\s*Learning Progress[\s\S]*?(?=\n##\s|\Z)"
+    if re.search(pattern, content):
+        new_content = re.sub(pattern, progress_section.strip(), content)
+        action = "updated"
+    else:
+        new_content = content + "\n\n---\n" + progress_section
+        action = "added"
 
-# === STEP 5: Replace or append progress section ===
-pattern = r"##\s*📚\s*Learning Progress[\s\S]*?(?=\n##\s|\Z)"
-if re.search(pattern, content):
-    content = re.sub(pattern, progress_section.strip(), content)
-    print("🔁 Updated existing progress section in README.")
-else:
-    content += "\n\n---\n" + progress_section
-    print("➕ Added new progress section to README.")
-
-# === STEP 6: Save file ===
-with open(README_PATH, "w", encoding="utf-8") as f:
-    f.write(content)
-
-print(f"✅ {completed}/{TOTAL_LESSONS} lessons ({percent}%). Rank: {rank}")
+    # Write README only if changed
+    if new_content.strip() != content.strip():
+        with open(README_PATH, "w", encoding="
