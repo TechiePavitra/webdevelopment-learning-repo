@@ -28,6 +28,14 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add README.md update_progress_debug.txt
-          git commit -m "Update learning progress automatically" || echo "No changes to commit"
-          git push
+
+          # Add all modified files (like README.md)
+          git add -A
+
+          # Commit only if there are changes
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit"
+          else
+            git commit -m "Update learning progress automatically"
+            git push
+          fi
