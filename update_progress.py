@@ -14,7 +14,7 @@ def get_rank(percent):
     if percent == 0:
         return "🍼 Beginner Sigma — Just opened VS Code!"
     elif percent < 10:
-        return "🐣 HTML Learner — Writing your first!<p>"
+        return "🐣 HTML Learner — Writing your first !<p>"
     elif percent < 25:
         return "🎨 CSS Explorer — Styling your path to glory!"
     elif percent < 40:
@@ -63,8 +63,6 @@ def main():
     achievements = get_achievements(completed)
 
     section = f"""
----
-
 ## 📚 Sigma Web Development Progress
 
 ![Progress](https://img.shields.io/badge/Progress-{percent}%25-brightgreen?style=for-the-badge)
@@ -75,14 +73,11 @@ def main():
 
 ### 🏅 Current Rank: {rank}
 
----
-
-### 🏆 Achievements
+## 🏆 Achievements
 {achievements}
 
----
-
-💖 *Special thanks to [CodeWithHarry](https://www.youtube.com/@CodeWithHarry) for creating the Sigma Web Development Course!*
+## 💖 Special Thanks  
+*Special thanks to [CodeWithHarry](https://www.youtube.com/@CodeWithHarry) for creating the Sigma Web Development Course!*
 """
 
     # read README
