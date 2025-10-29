@@ -9,3 +9,25 @@ This repository contains my practice code as I work on building a strong foundat
 - JavaScript  
 
 The purpose of this project is to document my learning progress and improve my understanding of how these core technologies work together to build websites.
+
+---
+
+## 📚 Sigma Web Development Progress
+
+![Progress](https://img.shields.io/badge/Progress-4.4%25-brightgreen?style=for-the-badge)
+
+<progress value="6" max="137"></progress>
+
+**6 / 137 lessons completed**
+
+### 🏅 Current Rank: 🐣 HTML Learner — Writing your first <p>!
+
+---
+
+### 🏆 Achievements
+- ✅ First lesson complete — welcome to the Sigma grind!
+- 📘 HTML fundamentals — mastered the art of <tags>!
+
+---
+
+💖 *Special thanks to [CodeWithHarry](https://www.youtube.com/@CodeWithHarry) for creating the Sigma Web Development Course!*
