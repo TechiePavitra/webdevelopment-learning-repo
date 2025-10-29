@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input Tags</title>
+    <!-- Meta Desc Best Practice for SEO -->
+    <meta name="description" content="this is a simple HTML form and input tags example.">
+    <!-- CSS Link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Headings-->
+    <h1>Example HTML Form</h1>
+    <h2>Form to Apply for TA</h2>
+    <!-- Form Starts Here -->
+    <form action="/submit.php" method="post">
+        <!-- Enter Your Username -->
+        <div>
+            <label for="username">Enter your Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Yor Username">
+        </div>
+
+        <!-- Gender Radio Box -->
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <!-- Check Box Button -->
+        <div>
+            <input type="checkbox" id="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <!-- Text Area Box  -->
+        <div>
+            <label for="comment">Enter Your comment</label>
+            <!-- <br> tag not suggested, it can broke other things, i'm using <br> tag only in this code, use <br> tag sometimes -->
+            <br>
+            <textarea id="comment" rows="5" cols="50"></textarea>
+        </div>
+        <!-- Selection Bar -->
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
