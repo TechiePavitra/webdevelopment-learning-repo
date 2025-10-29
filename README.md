@@ -10,3 +10,16 @@ This repository contains my practice code as I work on building a strong foundat
 
 The purpose of this project is to document my learning progress and improve my understanding of how these core technologies work together to build websites.
 
+
+
+---
+
+## 📚 Learning Progress
+
+![Progress](https://img.shields.io/badge/Progress-4.4%25-brightgreen)
+
+<progress value="6" max="137"></progress>
+
+**6 / 137 lessons completed**
+
+### 🏅 Current Rank: 🎓 Beginner
