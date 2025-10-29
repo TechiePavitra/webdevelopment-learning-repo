@@ -14,7 +14,7 @@ def get_rank(percent):
     if percent == 0:
         return "🍼 Beginner Sigma — Just opened VS Code!"
     elif percent < 10:
-        return "🐣 HTML Learner — Writing your first <p>!"
+        return "🐣 HTML Learner — Writing your first!<p>"
     elif percent < 25:
         return "🎨 CSS Explorer — Styling your path to glory!"
     elif percent < 40:
