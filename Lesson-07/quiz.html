@@ -1,0 +1,42 @@
+<!-- Quiz by Code With Harry - Sigma Web Development Course Tutorial #8 -->
+<!-- Quick Quiz:
+ Without using br tag, write a vertically aligned form asking for name, city and pincode of a user -->
+
+<!-- Answer is <div> tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Form</title>
+    <form action="/submit" method="post">
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Full Name">
+        </div>
+        <!-- City -->
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" required id="city" name="city" placeholder="City" autocomplete="address-level2">
+        </div>
+        <!-- Most Important Part -->
+        <!-- Pincode -->
+        <div class="form-group">
+            <label for="pincode">Pincode:</label>
+            <input type="text" required id="pincode" name="pincode" placeholder="Pincode" pattern="[0-9]{6}"
+                title="Please enter a valid 6-digit pincode">
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+    </form>
+</head>
+
+<body>
+
+</body>
+
+</html>
