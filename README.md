@@ -16,20 +16,18 @@ The purpose of this project is to document my learning progress and improve my u
 
 ## 📚 Sigma Web Development Progress
 
-![Progress](https://img.shields.io/badge/Progress-4.4%25-brightgreen?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-5.1%25-brightgreen?style=for-the-badge)
 
-<progress value="6" max="137"></progress>
+<progress value="7" max="137"></progress>
 
-**6 / 137 lessons completed**
+**7 / 137 lessons completed**
 
 ### 🏅 Current Rank: 🐣 HTML Learner — Writing your first!<p>
 
----
 
 ### 🏆 Achievements
 - ✅ First lesson complete — welcome to the Sigma grind!
 - 📘 HTML fundamentals — mastered the art of <tags>!
 
----
 
 💖 *Special thanks to [CodeWithHarry](https://www.youtube.com/@CodeWithHarry) for creating the Sigma Web Development Course!*
