@@ -14,7 +14,7 @@ def get_rank(percent):
     if percent == 0:
         return "🍼 Beginner Sigma — Just opened VS Code!"
     elif percent < 10:
-        return "🐣 HTML Learner — Writing your first !<p>"
+        return "🐣 HTML Learner — Writing your first!<p>"
     elif percent < 25:
         return "🎨 CSS Explorer — Styling your path to glory!"
     elif percent < 40:
@@ -73,25 +73,24 @@ def main():
 
 ### 🏅 Current Rank: {rank}
 
-## 🏆 Achievements
+
+### 🏆 Achievements
 {achievements}
 
-## 💖 Special Thanks  
-*Special thanks to [CodeWithHarry](https://www.youtube.com/@CodeWithHarry) for creating the Sigma Web Development Course!*
+
+💖 *Special thanks to [CodeWithHarry](https://www.youtube.com/@CodeWithHarry) for creating the Sigma Web Development Course!*
 """
 
-    # read README
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # replace old section or append after About
+    # Replace or add section
     pattern = r"## 📚 Sigma Web Development Progress[\s\S]*?(?=\Z)"
     if re.search(pattern, content):
         new_content = re.sub(pattern, section.strip(), content)
     else:
         new_content = content.strip() + "\n\n" + section.strip()
 
-    # write back
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(new_content)
 
