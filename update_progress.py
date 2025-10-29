@@ -1,16 +1,16 @@
 import os
 import re
 
-# === Configuration ===
-TOTAL_LESSONS = 137  # total lessons in your course
+# === CONFIGURATION ===
+TOTAL_LESSONS = 137
 README_PATH = "README.md"
 
-# === Step 1: Count completed lessons ===
+# === STEP 1: Count folders named lesson-XX ===
 lesson_folders = [d for d in os.listdir('.') if re.match(r'lesson-\d+', d)]
 completed = len(lesson_folders)
 percent = round((completed / TOTAL_LESSONS) * 100, 1)
 
-# === Step 2: Define achievement level ===
+# === STEP 2: Decide current rank ===
 if percent < 10:
     rank = "🎓 Beginner"
 elif percent < 40:
@@ -20,7 +20,7 @@ elif percent < 80:
 else:
     rank = "🏆 Master"
 
-# === Step 3: Generate new progress section ===
+# === STEP 3: Build the progress section ===
 progress_section = f"""
 ## 📚 Learning Progress
 
@@ -41,20 +41,21 @@ progress_section = f"""
 - 🔜 Next: Start Lesson {completed + 1 if completed < TOTAL_LESSONS else TOTAL_LESSONS}
 """
 
-# === Step 4: Read README ===
+# === STEP 4: Load README content ===
 with open(README_PATH, "r", encoding="utf-8") as f:
     content = f.read()
 
-# === Step 5: Replace or append progress section ===
-if "## 📚 Learning Progress" in content:
-    # Replace existing progress section
-    content = re.sub(r"## 📚 Learning Progress[\s\S]*?(?=\n## |$)", progress_section, content)
+# === STEP 5: Replace or append progress section ===
+pattern = r"##\s*📚\s*Learning Progress[\s\S]*?(?=\n##\s|\Z)"
+if re.search(pattern, content):
+    content = re.sub(pattern, progress_section.strip(), content)
+    print("🔁 Updated existing progress section in README.")
 else:
-    # Append at end if missing
     content += "\n\n---\n" + progress_section
+    print("➕ Added new progress section to README.")
 
-# === Step 6: Write back updated README ===
+# === STEP 6: Save file ===
 with open(README_PATH, "w", encoding="utf-8") as f:
     f.write(content)
 
-print(f"✅ Updated README with {completed}/{TOTAL_LESSONS} lessons ({percent}%). Rank: {rank}")
+print(f"✅ {completed}/{TOTAL_LESSONS} lessons ({percent}%). Rank: {rank}")
