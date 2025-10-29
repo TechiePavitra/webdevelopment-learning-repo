@@ -1,0 +1,27 @@
+name: Update Progress
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'lesson-*/**'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run progress update script
+        run: python update_progress.py
+      - name: Commit updated README
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git commit -m "Auto update learning progress" || echo "No changes"
+          git push
