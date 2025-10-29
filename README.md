@@ -8,4 +8,5 @@ This repository contains my practice code as I work on building a strong foundat
 - CSS  
 - JavaScript  
 
-The purpose of this project is to document my learning progress and improve my understanding of how these core technologies work together to build websites.  
+The purpose of this project is to document my learning progress and improve my understanding of how these core technologies work together to build websites.
+

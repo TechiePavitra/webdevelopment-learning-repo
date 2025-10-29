@@ -1,19 +1,17 @@
-name: Update Learning Progress
+name: Update Progress
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main   # or 'master' if your repo uses that
-    # Run on any push (so you can test)
-    paths:
-      - '**.py'
-      - '**.md'
-      - 'lesson-*/**'
+      - main
+
+permissions:
+  contents: write
 
 jobs:
-  update-progress:
+  update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,14 +21,13 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run update_progress.py
+      - name: Run progress updater
         run: python update_progress.py
 
       - name: Commit and push updated README
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add README.md || echo "No README found"
-          git add update_progress_debug.txt || echo "No debug log"
+          git add README.md update_progress_debug.txt
           git commit -m "Update learning progress automatically" || echo "No changes to commit"
           git push
