@@ -1,0 +1,21 @@
+/* ID's and Classes in CSS/Styling */
+
+/* ID's */
+#header {
+    color: blue;
+}
+
+#main-content {
+    color: red
+}
+
+/* Classes */
+.highlight {
+    color: green;
+}
+
+.box {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px 0;
+}
