@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - HTML</title>
+</head>
+
+<body>
+    <!-- Primary Heading -->
+    <h1>Media in HTML</h1>
+    <hr>
+
+    <!-- Video in HTML -->
+    <h2>HTML Video Example with controls attribute</h2>
+    <a href="https://www.bigbuckbunny.org/">Video Example by Big Buck Bunny</a>
+    <div>
+        <!-- controls attribute adds play.pause and other controls -->
+        <video src="video.mp4" controls width="555">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <hr>
+    <!-- Audio in HTML -->
+    <h2>HTML Audio Example with controls attribute</h2>
+    <a href="https://pixabay.com/music/search/no%20copyright/">Audio Examples by Pixabay</a>
+    <div>
+        <audio src="audio.mp3" controls></audio>
+    </div>
+
+    <h2>Important Audio Preload Examples</h2>
+    <section>
+        <h3>Preload="auto" (Default)</h3>
+        <p>Browser will load the entire audio file when the page loads:</p>
+        <audio controls preload="auto" src="audio.mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h3>Preload="metadata"</h3>
+        <p>Only loads metadata (like duration) but not the audio file itself:</p>
+        <audio controls preload="metadata" src="audio.mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h3>Preload="none"</h3>
+        <p>Won't load anything until the user clicks play:</p>
+        <audio controls preload="none" src="audio.mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <div class="notes">
+        <h3>Notes about preload attribute:</h3>
+        <ul>
+            <li><strong>auto</strong> - Browser should load the entire audio file</li>
+            <li><strong>metadata</strong> - Browser should load only metadata</li>
+            <li><strong>none</strong> - Browser should not preload anything</li>
+            <li>Note: Browsers may ignore preload settings based on user settings or network conditions</li>
+        </ul>
+        <hr>
+
+        <!-- SVG in HTML-->
+        <h2>SVG Example</h2>
+        <a href="https://www.svgrepo.com/svg/4733/samples">SVG by SVGREPO</a>
+        <div>
+            <img src="svg_example.svg" alt="Sample SVG Image" width="300">
+        </div>
+    </div>
+    <!-- IFRAME in HTML-->
+    <h2>IFRAME Example</h2>
+    <a href="https://en.wikipedia.org/wiki/Wikipedia:HTML5">IFRAME Webiste by Wikipedia</a>
+    <div>
+        <iframe src="https://en.wikipedia.org/wiki/Wikipedia:HTML5" frameborder="1" width="1000" height="1000"></iframe>
+    </div>
+
+    <!-- IFRAME YouTube Video -->
+    <h3>IFRAME YouTube Video</h3>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zb7ZNKGiQMU?si=kxHWquhusYRbCnPS"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+</body>
+
+</html>
