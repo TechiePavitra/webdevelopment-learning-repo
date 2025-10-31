@@ -1,16 +1,79 @@
 <!-- Quick Quiz: Create a website which shows videos of different catergory and audios of different categories. You can use YouTube videos in an iframe using YouTube's embedding feature -->
 
+<!-- Note: in this code there is a new semantic tag. <section>, we'll learn about semantic tags in next lesson -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pending!</title>
+    <title>Video and Audio Categories</title>
+    <meta name="description" content="A webpage showcasing various video and audio categories using YouTube embeds.">
 </head>
 
 <body>
-    <h1>Pending!</h1>
+    <h1>Video Categories</h1>
+
+    <!-- Educational Videos Section -->
+    <section>
+        <h2>Educational Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg"
+            title="HTML Tutorial for Beginners" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Music Videos Section -->
+    <section>
+        <h2>Music Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c?si=jQ70WTaXrIppbrkJ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Nature Videos Section -->
+    <section>
+        <h2>Nature Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/306btFyUEn8?si=UwKUgTTUmL2gE8cA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <h1>Audio Categories</h1>
+
+    <!-- Classical Music -->
+    <section>
+        <h2>Classical Music</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jgpJVI3tDbY" title="Classical Music"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Nature Sounds -->
+    <section>
+        <h2>Nature Sounds</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1Z2u_KJzS0g?si=Xpv9obqBkYv9yAdp"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Meditation Music -->
+    <section>
+        <h2>Meditation Music</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/77ZozI0rw7w" title="Meditation Music"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+    <p>Note: All videos and audio are embedded from YouTube using iframes</p>
 </body>
 
 </html>
