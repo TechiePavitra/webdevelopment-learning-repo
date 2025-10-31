@@ -1,0 +1,37 @@
+/* Fun Fact: i used css without any knowledge of it */
+/* Changed Font for Better readability */
+
+/* Header Styling */
+header {
+    color: rgb(15, 23, 42);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.information,
+.tags,
+figure {
+    color: rgb(71, 85, 105);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+
+.divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 2rem 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(100, 116, 139);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
