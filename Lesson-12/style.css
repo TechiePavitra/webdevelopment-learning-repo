@@ -9,14 +9,16 @@ header,
 h1,
 h2,
 h3 {
-    color: rgb(20, 83, 45); /* dark green */
+    color: rgb(255, 115, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
 /* Section Paragraph Styling */
 section {
     margin: 2rem 0;
-    color: rgb(56, 142, 60); /* soft light green */
+    color: rgb(56, 142, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
