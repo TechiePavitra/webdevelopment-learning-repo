@@ -109,6 +109,41 @@
             </code>
             </pre>
         </section>
+        <div class="divider"></div>
+
+        <section>
+            <h2>Quote Tags in HTML</h2>
+            <p>HTML provides two types of quote elements: inline quotes using <code>&lt;q&gt;</code> and block quotes
+                using <code>&lt;blockquote&gt;</code>.</p>
+
+            <h3>Inline Quote Tag: &lt;q&gt;</h3>
+            <p>The <code>&lt;q&gt;</code> tag is used for short, inline quotations. Browsers typically add quotation
+                marks automatically:</p>
+            <p>Shakespeare wrote: <q>All the world's a stage, and all the men and women merely players.</q></p>
+
+            <h3>Block Quote Tag: &lt;blockquote&gt;</h3>
+            <p>The <code>&lt;blockquote&gt;</code> tag is used for longer quotations that form a separate block of text.
+                It usually includes indentation:</p>
+            <blockquote cite="https://www.brainyquote.com/quotes/albert_einstein_148788">
+                <p>Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.</p>
+                <footer>— Albert Einstein</footer>
+            </blockquote>
+
+            <h3>Key Differences:</h3>
+            <ul>
+                <li><strong>&lt;q&gt;</strong> - For short, inline quotes (adds quotation marks automatically)</li>
+                <li><strong>&lt;blockquote&gt;</strong> - For larger, standalone quotes (adds indentation)</li>
+                <li>Both can use the <code>cite</code> attribute to specify the source URL</li>
+            </ul>
+
+            <h3>Example with both:</h3>
+            <p>As mentioned in the article: <q cite="https://example.com/article">The quick brown fox jumps over the
+                    lazy dog</q>, which reminds me of this longer passage:</p>
+            <blockquote cite="https://example.com/article">
+                <p>The quick brown fox jumps over the lazy dog. This pangram contains every letter of the English
+                    alphabet at least once. Pangrams are a good way to display font samples and test character sets.</p>
+            </blockquote>
+        </section>
     </main>
     <div class="divider"></div>
     <footer>
