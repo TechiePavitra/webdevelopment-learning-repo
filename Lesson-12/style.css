@@ -1,0 +1,35 @@
+/* Font for Readability */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header & Heading Styling */
+header,
+h1,
+h2,
+h3 {
+    color: rgb(20, 83, 45); /* dark green */
+    font-weight: bold;
+}
+
+/* Section Paragraph Styling */
+section {
+    margin: 2rem 0;
+    color: rgb(56, 142, 60); /* soft light green */
+    font-weight: bold;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: rgb(229, 229, 229);
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(46, 125, 50);
+}

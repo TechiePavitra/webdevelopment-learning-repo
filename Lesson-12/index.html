@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A webpage demonstrating HTML entities with examples.">
+</head>
+
+<body>
+    <header>
+        <h1>HTML Entities — Examples</h1>
+    </header>
+    <div class="divider"></div>
+    <main>
+        <section>
+            <h2>What are HTML entities?</h2>
+            <p>HTML entities are special codes used to represent characters that either have special meaning in HTML
+                (like &lt; or &gt;) or characters that are not present on your keyboard. Use named entities (like
+                <code>&amp;amp;</code>) or numeric references (decimal or hexadecimal) to display those characters.
+            </p>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Common named entities</h2>
+            <ul>
+                <li><code>&amp;amp;</code> → &amp;</li>
+                <li><code>&amp;lt;</code> → &lt;</li>
+                <li><code>&amp;gt;</code> → &gt;</li>
+                <li><code>&amp;quot;</code> → &quot; (double quote)</li>
+                <li><code>&amp;apos;</code> → &apos; (apostrophe; supported in HTML5)</li>
+                <li><code>&amp;nbsp;</code> → non-breaking space</li>
+                <li><code>&amp;copy;</code> → &copy; (copyright)</li>
+                <li><code>&amp;reg;</code> → &reg; (registered)</li>
+                <li><code>&amp;euro;</code> → &euro; (euro sign)</li>
+            </ul>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Numeric references</h2>
+            <p>Numeric references use the character's Unicode code point. Decimal format: <code>&amp;#169;</code>. Hex
+                format: <code>&amp;#xA9;</code>.</p>
+            <p>Examples:</p>
+            <ul>
+                <li><code>&amp;#169;</code> or <code>&amp;#xA9;</code> → ©</li>
+                <li><code>&amp;#241;</code> or <code>&amp;#xF1;</code> → ñ</li>
+            </ul>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Why use entities?</h2>
+            <p>Use entities to:</p>
+            <ul>
+                <li>Display characters that would otherwise be interpreted as HTML (for example: <code>&amp;lt;</code>
+                    for <code>&lt;</code>).</li>
+                <li>Include special symbols (©, ®, €, →) safely in your markup.</li>
+                <li>Insert non-breaking spaces (<code>&amp;nbsp;</code>) to prevent unwanted line breaks.</li>
+            </ul>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Examples (live)</h2>
+            <p>Display a less-than sign: <code>&amp;lt;</code> renders as &lt;</p>
+            <p>Display an ampersand: <code>&amp;amp;</code> renders as &amp;</p>
+            <p>Use a non-breaking space: <code>Item&nbsp;1</code> keeps the words on the same line: Item&nbsp;1</p>
+            <p>Decimal numeric example: <code>&amp;#169;</code> → &#169;</p>
+            <p>Hex numeric example: <code>&amp;#x1F600;</code> → &#x1F600; (grinning face emoji)</p>
+            <p>In an attribute: <code>&lt;a title="Tom &amp;amp; Jerry"&gt;hover me&lt;/a&gt;</code> renders as: <a
+                    title="Tom &amp; Jerry">hover me</a></p>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>Notes and tips</h2>
+            <ul>
+                <li>Named entities are easier to read, but not all characters have named entities — numeric references
+                    always work.</li>
+                <li>When showing HTML code on a page (for teaching), escape the angle brackets with entities (for
+                    example: <code>&amp;lt;div&amp;gt;</code>).</li>
+                <li>HTML5 supports many named entities; prefer the standard ones (&amp;amp;, &amp;lt;, &amp;gt;,
+                    &amp;quot;, &amp;nbsp;).</li>
+            </ul>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>&lt;Pre&gt; Tag in HTML</h2>
+            <p>It is used to display text exactly as it is written in the HTML source — including
+                spaces, tabs, and line breaks.</p>
+            <p>we generally use this tag to show our HTML code like this (check source code)</p>
+            <pre>
+        </section>
+        <div class="divider"></div>
+        <section>
+            <h2>&lt;code&gt; Tag in HTML</h2>
+                        <p>we generally use this &lt;pre&gt; tag to show our HTML code like this (check source code)</p>
+                <pre>
+                <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+            </pre>
+        </section>
+    </main>
+    <div class="divider"></div>
+    <footer>
+        <p>&copy; 2025 TechiePavitra. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

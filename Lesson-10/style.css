@@ -3,35 +3,44 @@
 
 /* Header Styling */
 header {
-    color: rgb(15, 23, 42);
+    color: rgb(255, 115, 0);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
+/* Paragraph Styling */
 .information,
 .tags,
 figure {
-    color: rgb(71, 85, 105);
+    margin: 2rem 0;
+    color: rgb(56, 142, 60);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-weight: bold;
 }
 
 
+/* Divider Styling */
 .divider {
     height: 1px;
     background: #e5e5e5;
     margin: 2rem 0;
 }
 
+
+/* Image Styling */
 img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    /* responsive images */
 }
 
 /* Footer Styling */
+
 footer {
     text-align: center;
     margin: 2rem 0;
-    color: rgb(100, 116, 139);
+    color: rgb(56, 142, 60);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

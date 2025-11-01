@@ -1,0 +1,27 @@
+When HTML was first created (early 1990s), there was no CSS.
+So, web developers had to use HTML tags for styling — like <b>, <font>, <center>, etc.
+
+HTML was doing both structure and design, which made web pages messy and hard to maintain.
+
+These old/deprecated HTML tags that are now replaced by CSS, we should avoid:
+
+<b> → use CSS: font-weight: bold;
+<i> → use CSS: font-style: italic;
+<u> → use CSS: text-decoration: underline;
+<center> → use CSS: text-align: center;
+<font> → use CSS: font-family, font-size, color;
+<big> → use CSS: font-size: larger;
+<small> → use CSS: font-size: smaller;
+<strike> → use CSS: text-decoration: line-through;
+<s> → use CSS: text-decoration: line-through;
+<tt> → use CSS: font-family: monospace;
+<blink> → use CSS animation (not recommended);
+<marquee> → use CSS animation or keyframes;
+<basefont> → use CSS: body { font-family: ...; font-size: ...; }
+<dir> → use CSS with <ul> or <ol> instead;
+<applet> → replaced by <object> or <embed> (not CSS, but deprecated);
+<align> (attribute) → use CSS: text-align or float;
+<bgcolor> (attribute) → use CSS: background-color;
+<border> (attribute) → use CSS: border;
+<width> / <height> (attribute) → use CSS: width, height;
+<valign> / <align> on <td> or <tr> → use CSS: vertical-align, text-align;
