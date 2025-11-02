@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation of CSS in HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Different methods to implement CSS in HTML: Inline, Internal, and External CSS.">
+</head>
+
+<body>
+    <header>
+        <h1>Implementation of CSS in HTML</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Inline CSS</h2>
+            <p>This method is the least common and not advised for production use.</p>
+            <h3>Example</h3>
+            <pre>
+                <code>
+                    &lt;p style="background-color: aqua;"&gt;Hello World!&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Internal CSS</h2>
+            <p>This method is common among non-professionals; you can use it for small CSS snippets, but it is not
+                recommended
+                for production-level websites.</p>
+            <h3>Example</h3>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                        &lt;style&gt;
+                        h1 {
+                            background-color: red;
+                            color: white;
+                        }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>External CSS</h2>
+            <p>This method is the most common and advised for production use; create a separate style.css file and link
+                it as shown below.</p>
+            <h3>Example</h3>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;/head&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+
+</body>
+
+</html>
