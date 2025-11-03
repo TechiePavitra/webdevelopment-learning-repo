@@ -1,0 +1,129 @@
+=========================================================
+   CSS PSEUDO SELECTORS - SIMPLE EXPLANATION
+=========================================================
+
+Pseudo selectors let you style elements based on their
+STATE, POSITION, or PARTS OF CONTENT.
+
+There are two main types:
+
+1. Pseudo-classes (start with ":")
+   - Describe a state or condition of an element.
+
+2. Pseudo-elements (start with "::")
+   - Style or target a specific part of an element.
+
+---------------------------------------------------------
+  1. PSEUDO-CLASSES (single colon ":")
+---------------------------------------------------------
+
+-- USER ACTION STATES --
+:link        -> styles unvisited links
+:visited     -> styles visited links
+:hover       -> when mouse is over the element
+:active      -> when element is clicked or activated
+:focus       -> when element is focused (like input box)
+
+Example:
+a:hover { color: red; }
+input:focus { border-color: green; }
+
+---------------------------------------------------------
+
+-- STRUCTURAL SELECTORS (based on element position) --
+:first-child        -> first child of parent
+:last-child         -> last child of parent
+:nth-child(n)       -> nth child of parent (1-based)
+:nth-last-child(n)  -> nth child from the end
+:only-child         -> element that is the only child
+
+Example:
+li:first-child { font-weight: bold; }
+p:nth-child(2) { color: blue; }
+
+---------------------------------------------------------
+
+-- TYPE-BASED STRUCTURE --
+:first-of-type       -> first element of that tag type
+:last-of-type        -> last element of that tag type
+:nth-of-type(n)      -> nth element of that tag type
+:nth-last-of-type(n) -> nth from last of that tag type
+:only-of-type        -> only one of that tag type
+
+Example:
+p:first-of-type { color: red; }
+
+---------------------------------------------------------
+
+-- FORM STATES --
+:checked     -> checkbox or radio button that is checked
+:disabled    -> disabled input
+:enabled     -> enabled input
+:required    -> input with "required" attribute
+:optional    -> input without "required"
+:valid       -> input passes HTML validation
+:invalid     -> input fails HTML validation
+
+Example:
+input:checked { outline: 2px solid green; }
+input:disabled { opacity: 0.5; }
+
+---------------------------------------------------------
+
+-- MISCELLANEOUS --
+:root        -> the root element of the document (<html>)
+:empty       -> element with no content
+:not(selector) -> matches everything except what is in ( )
+:target      -> matches an element with an ID that matches the URL hash
+
+Examples:
+:root { --main-color: blue; }
+div:empty { display: none; }
+p:not(.highlight) { color: gray; }
+#section1:target { background: yellow; }
+
+---------------------------------------------------------
+  2. PSEUDO-ELEMENTS (double colon "::")
+---------------------------------------------------------
+
+::before     -> insert content BEFORE the element
+::after      -> insert content AFTER the element
+::first-letter -> style the first letter of text
+::first-line -> style the first line of text
+::selection  -> style text that the user highlights
+::placeholder -> style the placeholder text in inputs
+
+Examples:
+p::before { content: "→ "; }
+p::after { content: " ✅"; }
+p::first-letter { font-size: 2em; }
+::selection { background: yellow; }
+input::placeholder { color: gray; }
+
+---------------------------------------------------------
+  3. COMBINING PSEUDO SELECTORS
+---------------------------------------------------------
+
+You can combine them for powerful effects.
+
+Example:
+button:hover::after {
+  content: " 👋";
+}
+
+This adds a waving hand AFTER the button text only when hovered.
+
+---------------------------------------------------------
+  4. SUMMARY
+---------------------------------------------------------
+
+- Pseudo-classes (:) = element state or condition
+  Examples: :hover, :focus, :first-child, :not()
+
+- Pseudo-elements (::) = part of the element
+  Examples: ::before, ::after, ::first-letter
+
+---------------------------------------------------------
+End of pseudo selectors summary.
+=========================================================
+

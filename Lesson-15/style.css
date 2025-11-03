@@ -1,0 +1,137 @@
+/* Example of CSS Structure */
+
+/* selector {
+    property: value;
+} */
+
+/* Types of Selector */
+
+/* Element Selector */
+
+/* Simple element selector: targets all <div> elements */
+div {
+    /* example properties */
+    background-color: #f8f8f8;
+    padding: 0.5rem;
+}
+
+/* Class Selector */
+.red {
+    /* targets elements with class="red" */
+    background-color: #ff6b6b;
+    color: white;
+    padding: 0.25rem 0.5rem;
+}
+
+/* ID Selector */
+#green {
+    /* targets the element with id="green" (unique per page) */
+    background-color: #2e8b57;
+    color: white;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Child Selectors */
+
+.ch>p {
+    /* .ch > p selects only direct <p> children of elements with class="ch" */
+    color: #ffc400;
+    background-color: #2a7ea5;
+    padding: 0.25rem;
+}
+
+/* Descendant Selector */
+div p {
+    /* selects any <p> inside a <div> (not just direct children) */
+    color: #111111;
+    background-color: #ffffff00;
+    /* transparent by default, just an example */
+}
+
+/* Attribute selector: selects links that open in a new tab */
+a[target="_blank"] {
+    color: #B34700;
+    /* accent color */
+}
+
+/* Grouping selectors: apply same rules to multiple selectors */
+h1,
+h2,
+h3 {
+    color: #B34700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Combinators: adjacent sibling and general sibling examples */
+/* A + B selects B when it directly follows A */
+h2+p {
+    margin-top: 0.25rem;
+}
+
+/* A ~ B selects B when it follows A anywhere (same parent) */
+.note~p {
+    color: #555555;
+}
+
+/* -------------------------- */
+/* PSEUDO-CLASS EXAMPLES */
+/* -------------------------- */
+
+/* :hover - when the user hovers over the element */
+a:hover {
+    text-decoration: underline;
+}
+
+/* :focus - when an element has keyboard focus (accessibility) */
+input:focus,
+textarea:focus {
+    outline: 2px solid #B34700;
+    outline-offset: 2px;
+}
+
+/* :active - while an element is being activated (pressed) */
+button:active {
+    transform: translateY(1px);
+}
+
+/* Structural pseudo-classes */
+li:first-child {
+    font-weight: 700;
+}
+
+li:nth-child(odd) {
+    background: #fafafa;
+}
+
+/* :not() example - select inputs that are not type="submit" */
+input:not([type="submit"]) {
+    padding: 0.4rem;
+}
+
+/* -------------------------- */
+/* PSEUDO-ELEMENT EXAMPLES */
+/* -------------------------- */
+
+/* ::before and ::after - insert content before/after an element */
+.blockquote::before {
+    content: "\201C";
+    /* left double quotation mark */
+    font-size: 2rem;
+    vertical-align: top;
+    margin-right: 0.25rem;
+    color: #B34700;
+}
+
+.muted::after {
+    content: " (muted)";
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+/* ::first-letter and ::first-line examples */
+p::first-letter {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Accessibility note: prefer :focus styles in addition to :hover so keyboard users can see focus */

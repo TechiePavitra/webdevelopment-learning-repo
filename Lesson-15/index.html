@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Types</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Selector Types</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Class Selector</h2>
+            <div class="red">I am a &lt;div&gt; with class="red"</div>
+
+            <h2>ID Selector</h2>
+            <div id="green">I am a &lt;div&gt; with id="green"</div>
+
+            <h2>Child Selector (.ch &gt; p)</h2>
+            <div class="ch">
+                <p>This &lt;p&gt; is a direct child of &lt;div class="ch"&gt; and matched by <code>.ch &gt; p</code>.
+                </p>
+                <div>
+                    <p>This &lt;p&gt; is a nested descendant (not a direct child) and is not matched by
+                        <code>.ch &gt; p</code>.</p>
+                </div>
+            </div>
+
+            <h2>Descendant Selector (div p)</h2>
+            <div>
+                <article>
+                    <p>This &lt;p&gt; inside &lt;article&gt; demonstrates the descendant selector <code>div p</code>.
+                    </p>
+                </article>
+            </div>
+
+            <h2>Combinators and Adjacent Sibling</h2>
+            <h3>Adjacent sibling (h2 + p)</h3>
+            <p>This paragraph immediately follows the previous heading and is affected by <code>h2 + p</code>.</p>
+
+            <h3>General sibling (.note ~ p)</h3>
+            <div class="note">Note box</div>
+            <p>This paragraph follows .note and is selected by <code>.note ~ p</code>.</p>
+
+            <h2>Attribute Selector</h2>
+            <p><a href="https://example.com" target="_blank">Open in new tab (target="_blank")</a></p>
+
+            <h2>Pseudo-classes and Pseudo-elements</h2>
+            <p>Hover the link above to see <code>:hover</code>. Use the keyboard to focus the input to see
+                <code>:focus</code>.</p>
+            <p>
+                <input type="text" placeholder="Focus me" />
+                <input type="submit" value="Submit" />
+                <button>Press me</button>
+            </p>
+
+            <h2>List - structural pseudo-classes</h2>
+            <ul>
+                <li>First item (first-child)</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ul>
+
+            <h2>Blockquote and Inline Quote examples</h2>
+            <p>Inline quote using <code>&lt;q&gt;</code>: <q cite="https://www.example.com">This is a short inline
+                    quote.</q></p>
+
+            <blockquote class="blockquote" cite="https://www.example.com">
+                <p>This is a longer block quote. It is styled by the <code>.blockquote</code> class and shows how
+                    <code>::before</code> can add a decorative quote mark.</p>
+                <footer>— Example Source</footer>
+            </blockquote>
+
+            <h2>Pseudo-element examples</h2>
+            <p class="muted">This paragraph has a pseudo-element ::after that adds a "(muted)" label.</p>
+
+            <h2>Not selector example</h2>
+            <p>Inputs below demonstrate <code>input:not([type="submit"])</code> selector:</p>
+            <input type="text" placeholder="text input">
+            <input type="email" placeholder="email input">
+            <input type="submit" value="Submit">
+
+            <h2>Class and ID recap</h2>
+            <p>Elements above show examples for <code>.red</code>, <code>#green</code>, child/descendant selectors,
+                combinators, attribute selectors, pseudo-classes, and pseudo-elements.</p>
+        </section>
+    </main>
+</body>
+
+</html>
