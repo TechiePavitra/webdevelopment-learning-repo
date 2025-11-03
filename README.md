@@ -16,11 +16,11 @@ The purpose of this project is to document my learning progress and improve my u
 
 ## 📚 Sigma Web Development Progress
 
-![Progress](https://img.shields.io/badge/Progress-10.2%25-brightgreen?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Progress-10.9%25-brightgreen?style=for-the-badge)
 
-<progress value="14" max="137"></progress>
+<progress value="15" max="137"></progress>
 
-**14 / 137 lessons completed**
+**15 / 137 lessons completed**
 
 ### 🏅 Current Rank: 🎨 CSS Explorer — Styling your path to glory!
 
