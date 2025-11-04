@@ -1,0 +1,3 @@
+Calculating the total dimension of the element
+Total Width = width + padding-left + padding-right + border-left + border-right + margin-left + margin-right
+Total Height = height + padding-top + padding-bottom + border-top + border-bottom + margin-top

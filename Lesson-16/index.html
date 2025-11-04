@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <meta name="description"
+        content="A webpage demonstrating the CSS Box Model with examples of margin, border, padding, and content.">
+    <style>
+        .box1 {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            border: 5px solid black;
+            padding: 15px;
+            background-color: lightgrey;
+            box-sizing: border-box;
+            /* Includes padding and border in the total width and height */
+        }
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            border: 5px solid black;
+            padding: 15px;
+            background-color: lightgrey;
+        }
+
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border: 10px solid black;
+            padding: 15px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Boxmodel</h1>
+    </header>
+    <section>
+        <img src="example.png" alt="CSS Boxmodel" width="300">
+    </section>
+
+    <section>
+        <h2>Example</h2>
+        <div class="box box1">I am a box</div>
+        <div class="box box2">I am another box</div>
+        <div class="box box3">i am a different box</div>
+    </section>
+</body>
+
+</html>
