@@ -1,0 +1,17 @@
+p {
+    background-color: blue;
+    color: white
+}
+
+div p:first-child {
+    background-color: yellow;
+    color: red;
+}
+
+/* Second Method */
+/* Same logic no difference */
+
+/* div p:nth-child(1) {
+    background-color: yellow;
+    color: red;
+} */

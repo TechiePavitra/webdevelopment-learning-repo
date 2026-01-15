@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Text & Color Properties</title>
+    <meta name="description"
+        content="Learn about CSS font properties, text styling, and color properties with practical examples.">
+    <!-- External CSS / Check and Learn more from Style.CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="internalfont">
+        <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+        <h1>System Internal Fonts</h1>
+        <h1>Fonts</h1>
+        <p>This is a paragraph demonstrating different font properties.</p>
+    </div>
+
+    <div class="externalfont">
+        <h1>Tech World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, autem architecto quaerat numquam saepe velit
+            ducimus iure omnis nam. Eaque ratione natus dolorem earum temporibus blanditiis fugiat eum mollitia odit
+            explicabo, eveniet voluptates sunt recusandae cumque? Aliquid deserunt dicta, vitae repellat cum doloremque?
+        </p>
+    </div>
+
+    <!-- New: Comprehensive font properties examples -->
+    <section class="font-demo" aria-labelledby="font-demo-title">
+        <h2 id="font-demo-title">Comprehensive Font Properties (live examples)</h2>
+        <p style="margin-top:0.25rem; margin-bottom:0.75rem; color:#475569;">Each example shows the property name and a
+            live preview. Read the <span style="font-weight:600;">meta</span> text to see the property and typical
+            usage.</p>
+
+        <div class="examples">
+            <div class="example">
+                <div class="meta">font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;</div>
+                <div class="preview font-family-demo">This text uses a custom font stack (font-family).</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-size: 24px;</div>
+                <div class="preview font-size-demo">This text is larger using font-size.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-weight: 700; (bold)</div>
+                <div class="preview font-weight-demo">This text is bold using font-weight.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-style: italic;</div>
+                <div class="preview font-style-demo">This text is italic using font-style.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-variant: small-caps;</div>
+                <div class="preview font-variant-demo">Small Caps: This is an example of small-caps.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-stretch: expanded;</div>
+                <div class="preview font-stretch-demo">This text uses font-stretch (wider glyphs when supported).</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-kerning: normal; (controls kerning pairs)</div>
+                <div class="preview font-kerning-demo">Kerning normal - AVWA practice to show pair spacing.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-feature-settings: "liga" 1, "kern" 1;</div>
+                <div class="preview font-feature-demo">Enables typographic features (liga, kern) when available.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-optical-sizing: auto;</div>
+                <div class="preview font-optical-demo">Optical sizing lets variable fonts adjust for size (if
+                    supported).</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-variation-settings: 'wght' 600;</div>
+                <div class="preview font-variation-demo">Adjust variable font axes (weight) when using variable fonts.
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font: italic small-caps 700 18px/1.4 'Poppins', Arial, sans-serif; (shorthand)</div>
+                <div class="preview font-shorthand-demo">Shorthand combines style, variant, weight, size/line-height and
+                    family.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">line-height: 2;</div>
+                <div class="preview line-height-demo">Line height increased to improve readability across multiple
+                    lines. Lorem ipsum dolor sit amet, consectetur.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">letter-spacing: 2px;</div>
+                <div class="preview letter-spacing-demo">Letter spacing increases space between characters.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">word-spacing: 6px;</div>
+                <div class="preview word-spacing-demo">Word spacing increases space between words for emphasis.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">text-transform: uppercase;</div>
+                <div class="preview text-transform-demo">Transforms text to uppercase.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">text-decoration: underline wavy #ef4444;</div>
+                <div class="preview text-decoration-demo">Underline with color and style using text-decoration.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">text-shadow: 1px 1px 2px rgba(0,0,0,0.15);</div>
+                <div class="preview text-shadow-demo">Adds a subtle text shadow for depth.</div>
+            </div>
+
+            <div class="example">
+                <div class="meta">font-size-adjust: 0.5; (improves legibility when fallback fonts differ)</div>
+                <div class="preview font-size-adjust-demo">Size adjust helps match the perceived x-height of fallback
+                    fonts.</div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

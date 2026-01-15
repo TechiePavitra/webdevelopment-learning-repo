@@ -9,9 +9,37 @@
 - Lesson-07: Inline & Block Elements
 - Lesson-08: IDs & Classes
 - Lesson-09: Media in HTML 
+  - Image
+  - Video
+  - Audio
+  - SVG
 - Lesson-10: Semantic Elements
+  - What is Semantic Elements?
+  - List of Semantic Tags
 - Lesson-11/Exercise-01: Audio & Video
 - Lesson-12: Entities in HTML
+  - Hidden Special HTML Symbols
 ### CSS
 - Lesson-13: Introduction to CSS
+  - What is CSS?
+  - Structure of CSS
 - Lesson-14: Implementation of CSS in HTML
+  - Inline CSS
+  - Internal CSS
+  - External CSS
+- Lesson-15: CSS Selector Types
+  - Element Selector
+  - ID Selector
+  - Class Selector
+  - Descendant Selector
+  - Child Selector
+  - Pseudo Selectors
+- Lesson-16: CSS Boxmodel
+  - Margin, Padding, Border
+  - Height, Width, Box-sizing
+- Lesson-17: CSS Fonts, Text & Color Properties
+  - How to customize Fonts?
+  - How to make font bold, italic or underline?
+  - Color Properties: RGB, HSL, HSLA, RGBA and basic color knowledge.
+  - How to use external font in our website?
+- Lesson-18/Exercise-02: Font and Properties.
