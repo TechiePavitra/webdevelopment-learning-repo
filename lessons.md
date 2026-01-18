@@ -43,3 +43,4 @@
   - Color Properties: RGB, HSL, HSLA, RGBA and basic color knowledge.
   - How to use external font in our website?
 - Lesson-18/Exercise-02: Font and Properties.
+- Lesson-19: Specificity & Casacade in CSS.

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade in CSS</title>
+    <style>
+        /* Base styles */
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        /* Class selector */
+        .highlight {
+            color: red;
+        }
+
+        /* ID selector */
+        #main {
+            font-size: 20px;
+        }
+
+        /* Specificity example */
+        .highlight#main {
+            color: blue;
+        }
+    </style>
+    <meta name="description" content="Tutorial on CSS Specificity and Cascade.">
+</head>
+<body>
+    <h1>Understanding CSS Specificity and Cascade</h1>
+    <p>This tutorial will help you understand how CSS specificity and cascade work with clear examples.</p>
+
+    <h2>1. Base Styles</h2>
+    <p>The base styles apply to the entire document. In this case, the body has a white background and black text color.</p>
+
+    <h2>2. Class Selector</h2>
+    <p>Class selectors allow you to apply styles to multiple elements. Here, the <code>.highlight</code> class changes the text color to red.</p>
+    <p class="highlight">This text is red because it has the <code>highlight</code> class.</p>
+
+    <h2>3. ID Selector</h2>
+    <p>ID selectors are unique and apply styles to a single element. The <code>#main</code> ID sets the font size to 20 pixels.</p>
+
+    <h2>4. Specificity Example</h2>
+    <p>Specificity determines which styles are applied when multiple rules could apply. The rule <code>.highlight#main</code> has higher specificity and will make the text blue.</p>
+    <div id="main">
+        <p class="highlight">This text will be blue due to specificity.</p>
+        <p>This text will be black.</p>
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>Understanding CSS specificity and cascade is crucial for effective styling. Use classes for reusable styles and IDs for unique elements.</p>
+</body>
+</html>

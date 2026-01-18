@@ -1,0 +1,55 @@
+/* Import font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    font-family: Inter, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    align-content: center;
+    justify-items: center;
+
+}
+
+/* Bottom Color */
+.faq-bottom {
+    margin-top: auto;
+    background-color: rgba(235, 235, 235, 0.384);
+    padding: 30px;
+
+}
+
+/* Divider */
+.faq-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+ol li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+/* Gap between list items  */
+ul li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.link {
+    text-decoration: none;
+    color: #2563eb;
+}
